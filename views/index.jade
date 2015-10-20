@@ -7,56 +7,59 @@ html
 		link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css", rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous")
 
 	body
-		nav.navbar.navbar-inverse
-					.container-fluid
-						.navbar-header
-							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
-								span.sr-only Toggle navigation
-								span.icon-bar
-								span.icon-bar
-								span.icon-bar
-							a.navbar-brand(href='#') Brand
-						#bs-example-navbar-collapse-2.collapse.navbar-collapse
-							ul.nav.navbar-nav
-								li.active
-									a(href='#')
-										| Link 
-										span.sr-only (current)
-								li
-									a(href='#') Link
-								li.dropdown
-									a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-										| Dropdown 
-										span.caret
-									ul.dropdown-menu(role='menu')
-										li
-											a(href='#') Action
-										li
-											a(href='#') Another action
-										li
-											a(href='#') Something else here
-										li.divider
-										li
-											a(href='#') Separated link
-										li.divider
-										li
-											a(href='#') One more separated link
-							form.navbar-form.navbar-left(role='search')
-								.form-group
-									input.form-control(type='text', placeholder='Search')
-								button.btn.btn-default(type='submit') Submit
-							ul.nav.navbar-nav.navbar-right
-								li
-									a(href='#') Link
+		.container-fluid
+			nav.navbar.navbar-inverse
+						.container-fluid
+							.navbar-header
+								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
+									span.sr-only Toggle navigation
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								a.navbar-brand(href='#') Raven
+							#bs-example-navbar-collapse-2.collapse.navbar-collapse
+								ul.nav.navbar-nav
+									li.active
+										a(href='#')
+											| About 
+											span.sr-only (current)
+									li
+										a(href='#') Location
+									li.dropdown
+										a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+											| Services
+											span.caret
+										ul.dropdown-menu(role='menu')
+											li
+												a(href='#') Consulting
+											li
+												a(href='#') Design-build
+											li
+												a(href='#') Management Services
+											li.divider
+											li
+												a(href='#') Technical Support
+											li.divider
+											li
+												a(href='#') One more separated link
+								form.navbar-form.navbar-right(role='search')
+									.form-group
+										input.form-control(type='text', placeholder='Search')
+									button.btn.btn-default(type='submit') Submit
 
-		div.jumbotron
-			h1 Jumbotron
-			p
-				| This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-			p
-				a.btn.btn-primary.btn-lg Learn more
 
-		
+			div.jumbotron.main
+				h1 Raven Innovation
+				p.white-text
+					| The eye that mocks a father And scorns a mother, The ravens of the valley will pick it out, And the young eagles will eat it.
+				p
+					a.btn.btn-primary.btn-lg Learn more
 
-		
+			div.jumbotron.footer
+				div.inline.col-sm-2
+					img.profile-pic(src="http://www.colorado.edu/itp/sites/default/files/styles/small/public/people/levi_perigo_pc0005.jpg?itok=fvLcBKiQ")
+				div.bio-container.inline.col-sm-10
+					p#bio Levi Perigo is a Scholar in Residence in the Interdisciplinary Telecom Program at the University of Colorado at Boulder.  Prior to joining the University of Colorado full-time, Levi was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  Levi holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Levi has a passion for working with students and challenging them with interactive, hands-on, real world scenarios in the classroom.  His research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking, IoT, and next generation protocols. Specifically, he has studied Internet Protocol version 6 (IPv6).  Some of Levi's interests outside of telecommunications include cycling (mountain/road), rock climbing (traditional/sport), and snowboarding.
+
+
 		script(src='scripts/main.js')

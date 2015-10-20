@@ -1,8 +1,33 @@
 body {
-  padding: 50px;
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.main {
+	background-image: url(https://jluckman.files.wordpress.com/2013/06/cropped-black_and_white_dark_birds_digital_art_ravens_1920x1200_wallpaper_wallpaper_1920x1200_www-wallpaperbeautiful-com.jpg);
+}
+
+.profile-pic {
+	width: 120px;
+	height: 160px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+#bio {
+	font-size: 14px;
+}
+
+.footer {
+	height: 264px;
+}
+
+.white-text {
+		color: #ffffff;
 }
