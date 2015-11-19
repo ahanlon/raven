@@ -19,6 +19,11 @@ app.use(express.errorHandler());
 
 // routes
 app.get('/', indexController.index);
+app.get('/about', indexController.about);
+app.get('/location', indexController.location);
+app.get('/support', indexController.support);
+app.get('/training', indexController.training);
+app.get('/careers', indexController.careers);
 
 // start server
 http.createServer(app).listen(app.get('port'), function(){

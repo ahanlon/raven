@@ -1,33 +1,61 @@
 body {
   /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x1000.jpg) top right no-repeat; background-attachment:fixed;
 }
 
 a {
   color: #00B7FF;
 }
 
+.contain-fluid {
+	position: relative;
+}
+
+.min-height {
+	min-height: 100%;
+}
+
 .main {
-	background-image: url(https://jluckman.files.wordpress.com/2013/06/cropped-black_and_white_dark_birds_digital_art_ravens_1920x1200_wallpaper_wallpaper_1920x1200_www-wallpaperbeautiful-com.jpg);
+	min-height: 80%;
+
+}
+
+div .transparent-back {
+	background: transparent;
 }
 
 .profile-pic {
-	width: 120px;
-	height: 160px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .inline {
 	display: inline-block;
 }
 
-#bio {
+#bio{
 	font-size: 14px;
 }
 
+.bio {
+	position: absolute;
+	top: 60%;
+}
+
 .footer {
-	height: 264px;
+	min-height: 264px;
 }
 
 .white-text {
 		color: #ffffff;
 }
+
+/* About us styles */
+
+.main2 {
+	background-image: url(http://www.stockfreeimages.com/Boulder-Flatiron-Mountains-thumb4824005.jpg
+		);
+	height: 1200px;
+}
+
