@@ -1,22 +1,22 @@
 module.exports = {
 	index: function(req, res) {
 	  res.render('index', {
-	  	title: 'Raven-Innovations'
+	  	title: 'Raven-Innovation'
 	  });
 	},
 	about: function(req, res) {
-		res.render('about');
+		res.render('about', {
+			title: 'About-Raven'
+		});
 	},
 	location: function(req, res) {
-		res.render('location');
+		res.render('contact', {
+			title: 'Contact-Raven'
+		});
 	},
-	support: function(req, res) {
-		res.render('support');
+	services: function(req, res) {
+		res.render('services', {
+			title: 'Services-Raven'
+		});
 	},
-	training: function(req, res) {
-		res.render('training');
-	},
-	careers: function(req, res) {
-		res.render('careers');
-	}
 };

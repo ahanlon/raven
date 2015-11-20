@@ -1,7 +1,7 @@
 body {
-  /*padding: 50px;*/
+  padding-top: 70px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x1000.jpg) top right no-repeat; background-attachment:fixed;
+  /*background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x1000.jpg) top right no-repeat; background-attachment:fixed;*/
 }
 
 a {
@@ -22,7 +22,11 @@ a {
 }
 
 div .transparent-back {
-	background: transparent;
+background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x400.jpg) top right no-repeat;
+}
+
+.float-right {
+	float: right;
 }
 
 .profile-pic {
@@ -53,9 +57,11 @@ div .transparent-back {
 
 /* About us styles */
 
-.main2 {
-	background-image: url(http://www.stockfreeimages.com/Boulder-Flatiron-Mountains-thumb4824005.jpg
-		);
-	height: 1200px;
+
+/* Footer styles */
+
+.footer {
+	min-height: 264px;
+/*	background-image: url(http://www.summitpost.org/images/original/505538.JPG);*/
 }
 

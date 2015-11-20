@@ -9,7 +9,7 @@ html.min-height
 	body
 		// main navbar
 		.container-fluid
-			nav.navbar.navbar-inverse
+			nav.navbar.navbar-inverse.navbar-fixed-top
 						.container-fluid
 							.navbar-header
 								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
@@ -18,39 +18,36 @@ html.min-height
 									span.icon-bar
 									span.icon-bar
 								a.navbar-brand(href='/') Raven
-							#bs-example-navbar-collapse-2.collapse.navbar-collapse
+							#bs-example-navbar-collapse-2.collapse.navbar-collapse.float-right
 								ul.nav.navbar-nav
-									li.active
-										a(href='about')
-											| About 
-											span.sr-only (current)
-									li
-										a(href='location') Location
-									li
-										a(href='support') Support
 									li.dropdown
-										a.dropdown-toggle(href='javascript:void(0)', data-toggle='dropdown', role='button', aria-expanded='false')
+										a.dropdown-toggle(href='services', data-hover='dropdown', role='button', aria-expanded='false')
 											| Services
 											span.caret
 										ul.dropdown-menu(role='menu')
 											li
-												a(href='consulting') Consulting
+												a(href='#network-design') Network Design
 											li
-												a(href='design-build') Design-build
+												a(href='#network-security') 	Network Security
 											li
-												a(href='management-services') Management Services
-											li.divider
+												a(href='#research') Research
 											li
-												a(href='technical support') Technical Support
-											li.divider
-										li
-											a(href='training') Training
-										li
-											a(href='careers') Careers
-								form.navbar-form.navbar-right(role='search')
-									.form-group
-										input.form-control(type='text', placeholder='Search')
-									button.btn.btn-default(type='submit') Submit			
+												a(href='#route-switch') Routing and Switching
+											li
+												a(href='#training') Training
+											li
+												a(href='#voip') Voice over IP (VoIP)
+											li
+												a(href='#webdev') Website Development
+											li
+												a(href='#wireless') Wireless
+									li
+										a(href='about')
+											| About 
+											span.sr-only (current)
+									li
+										a(href='contact') Contact
+		
 	
 			block content
 				// main homepage content	
@@ -59,7 +56,7 @@ html.min-height
 					p.white-text
 						| Trusted and Respected Network Engineering Solutions
 					p
-						a.btn.btn-primary.btn-lg(href='about') Learn more
+						a.btn.btn-primary.btn-lg(href='services') Learn more
 
 				div.jumbotron
 					div.inline
@@ -68,7 +65,7 @@ html.min-height
 						div.inline.col-sm-8.col-md-10
 							div
 							p#bio 
-								| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the Interdisciplinary Telecom Program (<a href="http://www.colorado.edu/itp/">http://www.colorado.edu/itp/</a>) at the University of Colorado at Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
+								| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the <a href="http://www.colorado.edu/itp/">Interdisciplinary Telecom Program</a> at the University of Colorado Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
 								br
 								br
 								| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
@@ -77,4 +74,5 @@ html.min-height
 
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.js")
 		script(src='scripts/main.js')
