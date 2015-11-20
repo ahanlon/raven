@@ -1,12 +1,59 @@
 extends index
 
 block content
-	div.jumbotron
-		div.inline
-			div.inline
-				div
-				p#bio 
-					| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the <a href="http://www.colorado.edu/itp/">Interdisciplinary Telecom Program</a> at the University of Colorado Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
+	.container
+		.row
+		.col-md-12
+			small
+			.alert.alert-success.hidden
+				strong
+					span.glyphicon.glyphicon-send
+					|  Success! Message sent. (If form ok!)
+			.alert.alert-danger.hidden
+				span.glyphicon.glyphicon-alert
+				strong  Error! Please check the inputs. (If form error!)
+		form(role='form', action='', method='post')
+			.col-lg-6
+				.well.well-sm
+					strong
+						i.glyphicon.glyphicon-ok.form-control-feedback
+						|  Required Field
+				.form-group
+					label(for='InputName') Your Name
+					.input-group
+						input#InputName.form-control(type='text', name='InputName', placeholder='Enter Name', required='')
+						span.input-group-addon
+							i.glyphicon.glyphicon-ok.form-control-feedback
+				.form-group
+					label(for='InputEmail') Your Email
+					.input-group
+						input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Enter Email', required='')
+						span.input-group-addon
+							i.glyphicon.glyphicon-ok.form-control-feedback
+				.form-group
+					label(for='InputMessage') Message
+					.input-group
+						textarea#InputMessage.form-control(name='InputMessage', rows='5', required='')
+						span.input-group-addon
+							i.glyphicon.glyphicon-ok.form-control-feedback
+				.form-group
+					label(for='InputReal') What is 4+3? (Simple Spam Checker)
+					.input-group
+						input#InputReal.form-control(type='text', name='InputReal', required='')
+						span.input-group-addon
+							i.glyphicon.glyphicon-ok.form-control-feedback
+				input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Submit')
+		hr.featurette-divider.hidden-lg
+		.col-lg-5.col-md-push-1
+			address
+			h3 Office Location
+			p.lead
+				a(href='https://www.google.com/maps/place/Engineering+Center,+1111+Engineering+Dr,+Boulder,+CO+80309/@40.0071697,-105.2648959,17z/data=!3m1!4b1!4m2!3m1!1s0x876bedcb99bb71b9:0xadccadbd9ea75dc7')
+					| 1111 Engineering Drive
 					br
+					| ECOT 318, 530 UCB
 					br
-					| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
+					| Boulder, CO 80309-0530
+				br
+				|       Phone: 303-492-8475
+
