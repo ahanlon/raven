@@ -1,7 +1,10 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var nodemailer = require('nodemailer');
 var indexController = require('./controllers/index.js');
+var mailController = require('./controllers/mail.js');
+
 
 // configure express
 var app = express();
@@ -20,9 +23,13 @@ app.use(express.errorHandler());
 // routes
 app.get('/', indexController.index);
 app.get('/about', indexController.about);
-app.get('/contact', indexController.location);
+app.get('/contact', indexController.contact);
 app.get('/services', indexController.services);
-app.get('wireless', indexController.services);
+
+
+app.post('/mail', mailController.mail);
+
+
 
 // start server
 http.createServer(app).listen(app.get('port'), function(){

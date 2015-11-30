@@ -1,11 +1,26 @@
 body {
   padding-top: 70px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x1000.jpg) top right no-repeat; background-attachment:fixed;*/
+  background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
+  height: 100%	;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+/* nav-bar styles */
+
+
+
+
+
+
+/* Home page styels */
+
+.bio-container {
+	padding: 0 60px;
 }
 
 .contain-fluid {
@@ -21,8 +36,12 @@ a {
 
 }
 
+.jumbotron, h1 {
+	color: white;
+}
+
 div .transparent-back {
-background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_white_92907_1600x400.jpg) top right no-repeat;
+background: transparent;
 }
 
 .float-right {
@@ -39,11 +58,13 @@ background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_w
 }
 
 #bio{
-	font-size: 14px;
+	font-size: 18px;
+/*	background-color: #ffffff;
+	border-radius: 6px;*/
+	padding: 5px;
 }
 
 .bio {
-	position: absolute;
 	top: 60%;
 }
 
@@ -57,6 +78,9 @@ background:url(https://wallpaperscraft.com/image/raven_bird_flying_smoke_black_w
 
 /* About us styles */
 
+.bio-text {
+	background-color: #ffffff;
+}
 
 /* Footer styles */
 
