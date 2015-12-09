@@ -13,7 +13,7 @@ block content
 		//- 	.alert.alert-danger.hidden
 		//- 		span.glyphicon.glyphicon-alert
 		//- 		strong  Error! Please check the inputs. (If form error!)
-		form(role='form', action='/mail', method='POST')
+		form(role='form', action='http://formmail.dreamhost.com/cgi-bin/formmail.cgi', method='POST')
 			.col-lg-6
 				.well.well-sm
 					strong
@@ -22,13 +22,13 @@ block content
 				.form-group
 					label(for='InputName') Your Name
 					.input-group
-						input#inputName.form-control(type='text', name='InputName', placeholder='Enter Name', required='')
+						input#inputName.form-control(type='text', name='realname', placeholder='Enter Name', required='')
 						span.input-group-addon
 							i.glyphicon.glyphicon-ok.form-control-feedback
 				.form-group
 					label(for='InputEmail') Your Email
 					.input-group
-						input#inputEmail.form-control(type='email', name='InputEmail', placeholder='Enter Email', required='')
+						input#inputEmail.form-control(type='text', name='email', placeholder='Enter Email', required='')
 						span.input-group-addon
 							i.glyphicon.glyphicon-ok.form-control-feedback
 				.form-group
@@ -38,13 +38,11 @@ block content
 						span.input-group-addon
 							i.glyphicon.glyphicon-ok.form-control-feedback
 				.form-group
-					label(for='InputReal') What is 4+3? (Simple Spam Checker)
 					.input-group
-						input#inputReal.form-control(type='text', name='InputReal', required='')
-						span.input-group-addon
-							i.glyphicon.glyphicon-ok.form-control-feedback
-						//- input(type='hidden' name='redirect' value='http://localhost:3000/contact')
-				input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Send')
+						input#inputRecipient.form-control(type='hidden' name="recipient" value="andrew#raveninnovation.com, levi#raveninnovation.com")
+					.input-group
+						input#inputRedirect.form-control(type='hidden' name='redirect', value='http://localhost:3000/contact')
+				input#submit.btn.btn-info.pull-right(type='submit')
 		if(typeof msg !== 'undefined')
 			if(!!err)
 				div(class='msgbox err') #{msg}

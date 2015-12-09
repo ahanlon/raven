@@ -4,13 +4,13 @@ module.exports = {
 	mail: function(req, res) {
 
 		var mailOpts, smtpTrans;
-				//Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
+				//Setup Nodemailer transport, Create an application-specific password to avoid problems.
 				smtpTrans = nodemailer.createTransport('SMTP', {
-						host: 'mail.raveninnovation.com',
+						host: 'Gmail',
 						port: 587,
 						auth: {
-								user: "andrew@raveninnovation.com",
-								pass: "Hanlo2746" 
+								user: "hanlonad27@gmai.com",
+								pass: "Levi1427" 
 						}
 				});
 				//Mail options

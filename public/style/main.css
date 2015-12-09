@@ -2,8 +2,11 @@ body {
   padding-top: 70px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
-  height: 100%	;
+  background-size: cover;
+  height: 100%;
 }
+
+
 
 a {
   color: #00B7FF;
@@ -81,6 +84,15 @@ background: transparent;
 .bio-text {
 	background-color: #ffffff;
 }
+
+
+/* Services Styles */
+.services-container {
+	padding-top: 70px;
+	overflow: auto;
+	height: 100%;
+}
+
 
 /* Footer styles */
 
