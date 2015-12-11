@@ -1,11 +1,17 @@
 body {
-  padding-top: 70px;
+  /*padding-top: 70px;*/
+/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
+  background-size: cover;
+  height: 100%;*/
+}
+
+.all {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
   background-size: cover;
   height: 100%;
 }
-
 
 
 a {
@@ -15,7 +21,9 @@ a {
 
 /* nav-bar styles */
 
-
+nav.navbar.no-margin {
+	margin-bottom: none;
+}
 
 
 
@@ -57,7 +65,7 @@ background: transparent;
 }
 
 .inline {
-	display: inline-block;
+	display: inline-block;	
 }
 
 #bio{
@@ -71,33 +79,42 @@ background: transparent;
 	top: 60%;
 }
 
-.footer {
-	min-height: 264px;
-}
-
 .white-text {
 		color: #ffffff;
 }
 
 /* About us styles */
 
-.bio-text {
+.white-back {
 	background-color: #ffffff;
 }
 
 
-/* Services Styles */
+/* ----------------------------- Services Styles ------------------------------------------ */
 .services-container {
-	padding-top: 70px;
+	/*padding: 0 5%;*/
 	overflow: auto;
 	height: 100%;
 }
 
+div .media {
+	margin-top: 0;
+	padding: 3%;
+	border-bottom-width: 5px;
+	border-bottom-style: ridge;	
+}
 
-/* Footer styles */
+.services-images {
+	max-height: 200px;
+	max-width: 200px;
+	/*float: left;*/
+}
+
+
+
+/* ----------------------------- Footer styles ------------------------------------------- */
 
 .footer {
-	min-height: 264px;
-/*	background-image: url(http://www.summitpost.org/images/original/505538.JPG);*/
+	margin: none;
 }
 
