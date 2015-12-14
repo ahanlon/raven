@@ -3,13 +3,14 @@ html.min-height
 	head
 		meta(charset='utf-8')
 		title= title
-		link(rel='stylesheet' type='text/css' href='style/main.css')
+
 		link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css", rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous")
+		link(rel='stylesheet' type='text/css' href='style/main.css')
 
 	body
-		.all
+		.all.border
 			// main navbar
-			nav.navbar.navbar-default.no-margin
+			nav.navbar-default
 						.container-fluid
 							.navbar-header
 								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
@@ -26,19 +27,19 @@ html.min-height
 											span.caret
 										ul.dropdown-menu(role='menu')
 											li
-												a(href='#network-design') Network Design
+												a(href='/services#network-design') Network Design
 											li
-												a(href='#network-security') 	Network Security
+												a(href='services#network-security') 	Network Security
 											li
-												a(href='#research') Research
+												a(href='services#research') Research
 											li
-												a(href='#route-switch') Routing and Switching
+												a(href='services#route-switch') Routing and Switching
 											li
-												a(href='#training') Training
+												a(href='services#training') Training
 											li
-												a(href='#voip') Voice over IP (VoIP)
+												a(href='services#voip') Voice over IP (VoIP)
 											li
-												a(href='#wireless') Wireless
+												a(href='services#wireless') Wireless
 									li
 										a.white-text(href='about')
 											| About 
@@ -68,19 +69,39 @@ html.min-height
 								br
 								br
 								| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
-
-		footer.footer
-			address
-				header.header-font Office Location
-				p.lead
-					a(href='https://www.google.com/maps/place/Engineering+Center,+1111+Engineering+Dr,+Boulder,+CO+80309/@40.0071697,-105.2648959,17z/data=!3m1!4b1!4m2!3m1!1s0x876bedcb99bb71b9:0xadccadbd9ea75dc7')
-						| 1111 Engineering Drive
-						br
-						| ECOT 318, 530 UCB
-						br
-						| Boulder, CO 80309-0530
-					br
-					|       Phone: 303-492-8475
+		footer.footer.container-fluid
+			nav.navbar-default
+						.container-fluid.foot
+							ul.nav.navbar-nav.center.foot-nav-list
+								li.foot-link
+									a.white-text(href='/') Home
+								li.foot-link
+									a.white-text(href='services', role='button')
+										| Services
+									ul.list-group
+										li.foot-service
+											a(href='services#network-design') Network Design
+										li.foot-service
+											a(href='services#network-security') Network Security
+										li.foot-service
+											a(href='services#research') Research
+										li.foot-service
+											a(href='services#route-switch') Routing and Switching
+										li.foot-service
+											a(href='services#training') Training
+										li.foot-service
+											a(href='services#voip') Voice over IP (VoIP)
+										li.foot-service
+											a(href='services#wireless') Wireless
+								//- li.foot-link
+								//- 	a.white-text(href='about')
+								//- 		| About 
+								//- 		span.sr-only (current)
+								li.foot-link
+									a.white-text(href='contact') Contact
+			div.copywrite.white-text.center.foot-service
+				p
+					| Copyright © Raven Innovation
 
 
 
