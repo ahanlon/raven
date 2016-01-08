@@ -6,14 +6,23 @@ console.log('Where my Ravens at??');
 
 var vHeight = $(window).height(),
     vWidth = $(window).width(),
-    all = $('.all'),
+    contact = $('.contact'),
     about = $('.about');
 
-all.css({"height":vHeight,"width":vWidth});
-about.css({"height":vHeight,"width":vWidth});
+contact.css({"height":vHeight});
+about.css({"height":vHeight});
 
+// ---------------- change background image on page load ------------------
+// $(window).on('load', function() {
+// 	$('body').css('background', 'none');
+// });
 
+// $('.services-container').on('', function(e) {
 
+// 		$('body').css('background', 'none');
+
+	
+// });
 
 
 

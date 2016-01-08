@@ -1,9 +1,10 @@
 
-module.exports = {
+
+var indexcontroller = {
 		index: function(req, res) {
-			res.render('index', {
-				title: 'Raven-Innovation'
-			});
+				res.render('index', {
+					title: 'Raven-Innovation'
+				});
 		},
 		about: function(req, res) {
 				res.render('about', {
@@ -18,7 +19,10 @@ module.exports = {
 		},
 		services: function(req, res) {
 				res.render('services', {
-						title: 'Services-Raven'
+						title: 'Services-Raven',
 				});
 		},
-};
+}
+
+module.exports = indexcontroller;
+

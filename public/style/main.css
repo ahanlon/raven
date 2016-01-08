@@ -1,9 +1,9 @@
 body {
   /*padding-top: 70px;*/
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
-  background-size: cover;
-  height: 100%;
+/*	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
+	background-size: cover;
+	height: 100%;*/
 }
 
 body:before {
@@ -15,6 +15,8 @@ body:before {
 
 .all {
 	overflow: auto;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ 	height: 100%;
 }
 
 
@@ -33,6 +35,9 @@ body:before {
 
 
 /* Home page styels */
+.back-none {
+	background: none;
+}
 
 .bio-container {
 	padding: 0 60px;
@@ -48,13 +53,28 @@ body:before {
 }
 
 .main {
-	min-height: 80%;
-
+	background:url(/images/HD2.jpg) no-repeat; background-attachment:fixed;
+ 	background-size: cover;
+ 	background-position: center;
+ 	/*height: 100%;*/
 }
 
-.jumbotron, h1 {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	.main {
+		background:url(/images/artCrow.jpg) no-repeat; background-attachment:fixed;
+	 	background-size: cover;
+	 	background-position: center;
+	 	height: 100%;
+	}
+}
+
+/*.jumbotron, h1 {
 	color: white;
-}
+}*/
 
 div .transparent-back {
 background: transparent;
@@ -94,24 +114,20 @@ background: transparent;
 
 /* About us styles */
 
-.white-back {
-	background-color: #ffffff;
-}
 
-.clear {
-	clear: both;
-}
+
 
 /* ----------------------------- Services Styles ------------------------------------------ */
-.services-container {
-	/*padding: 0 5%;*/
+/*.services-container {
+	padding: 0 5%;
 	overflow: auto;
 	height: 100%;
-}
+}*/
 
-div .media {
-	margin-top: 0;
-	padding: 3%;
+div .aboutBox {
+    padding: 3%;
+    margin: 5% 8%;
+    border-radius: 25px;
 }
 
 .services-images {
@@ -124,6 +140,19 @@ div .media {
 	border-bottom-width: 5px;
 	border-bottom-style: ridge;	
 }
+
+/* ----------------------------- Contact styles ------------------------------------------*/
+
+.contact {
+	overflow: auto;
+	min-height: 525px;
+
+}
+
+.header-contact {
+	font-size: 4.857143em;
+}
+
 
 
 /* ----------------------------- Footer styles ------------------------------------------- */
@@ -138,19 +167,55 @@ div .media {
 }
 
 .foot-nav-list {
-	padding: 0 13%;
+	margin: 9.75px -15px;
+}
+
+@media (min-width: 768px) {
+	.foot-nav-list {
+		margin: 0;
+	}
 }
 
 .foot-link {
-	min-width: 150px;
+	min-width: 33%;
+	float: left;
 }
 
 .foot-service {
-	font-size: 12px;
+	font-size: .8em;
 }
 
+/*.copywrite {
+	padding: 0 13%;
+}*/
+
+
 /* -------------------------- About Styles -------------------------------------------- */
+
+.white-back {
+	background-color: #ffffff;
+}
+
+.clear {
+	clear: both;
+}
 
 .about {
 	 background:url(/images/blue-sky-mtn.jpg) no-repeat; background-attachment:fixed;
 }
+
+.opacity {
+	opacity: .7;
+}
+
+.aboutBox h1 {
+	font-size: 2.5em;
+	margin-bottom: .5em;
+}
+
+.aboutBox p {
+	font-size: 1.4em;
+}
+
+
+

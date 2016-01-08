@@ -8,100 +8,101 @@ html.min-height
 		link(rel='stylesheet' type='text/css' href='style/main.css')
 
 	body
-		.all.border
-			// main navbar
-			nav.navbar-default
-						.container-fluid
-							.navbar-header
-								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
-									span.sr-only Toggle navigation
-									span.icon-bar
-									span.icon-bar
-									span.icon-bar
-								a.navbar-brand.white-text(href='/') Raven
-							#bs-example-navbar-collapse-2.collapse.navbar-collapse.float-right
-								ul.nav.navbar-nav
-									li.dropdown
-										a.dropdown-toggle.white-text(href='services', data-hover='dropdown', role='button', aria-expanded='false')
-											| Services
-											span.caret
-										ul.dropdown-menu(role='menu')
-											li
-												a(href='/services#network-design') Network Design
-											li
-												a(href='services#network-security') 	Network Security
-											li
-												a(href='services#research') Research
-											li
-												a(href='services#route-switch') Routing and Switching
-											li
-												a(href='services#training') Training
-											li
-												a(href='services#voip') Voice over IP (VoIP)
-											li
-												a(href='services#wireless') Wireless
-									li
-										a.white-text(href='about')
-											| About 
-											span.sr-only (current)
-									li
-										a.white-text(href='contact') Contact
+		// main navbar
+		nav.navbar-default
+					.container-fluid
+						.navbar-header
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a.navbar-brand.white-text(href='/') Raven
+						#bs-example-navbar-collapse-2.collapse.navbar-collapse.float-right
+							ul.nav.navbar-nav
+								li.dropdown
+									a#service-btn.dropdown-toggle.white-text(href='services', data-hover='dropdown', role='button', aria-expanded='false')
+										| Services
+										span.caret
+									ul.dropdown-menu(role='menu')
+										li
+											a(href='/services#network-design') Network Design
+										li
+											a(href='services#network-security') 	Network Security
+										li
+											a(href='services#research') Research
+										li
+											a(href='services#route-switch') Routing and Switching
+										li
+											a(href='services#training') Training
+										li
+											a(href='services#voip') Voice over IP (VoIP)
+										li
+											a(href='services#wireless') Wireless
+								li
+									a.white-text(href='about')
+										| About 
+										span.sr-only (current)
+								li
+									a.white-text(href='contact') Contact
 			
 		
 			block content
-				// main homepage content
-				div.container-fluid.header
-					div.jumbotron.transparent-back.main.white-text
-						h1 Raven Innovation
-						p.white-text
-							| Trusted and Respected Network Engineering Solutions
-						p
-							a.btn.btn-primary.btn-lg(href='services') Learn more
+				.all.border.main
+					// main homepage content
+					div.container-fluid.header
+						div.jumbotron.transparent-back.main.white-text
+							h1 Raven Innovation
+							p.white-text
+								| Trusted and Respected Network Engineering Solutions
+							p
+								a.btn.btn-primary.btn-lg(href='services') Learn more
 
-				div.bio-container
-					div.inline
-						div.inline.col-sm-4.col-md-2
-							img.profile-pic(src="http://www.colorado.edu/itp/sites/default/files/styles/small/public/people/levi_perigo_pc0005.jpg?itok=fvLcBKiQ")
-						div.inline.col-sm-8.col-md-10
-							div
-							p#bio.white-text
-								| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the <a href="http://www.colorado.edu/itp/">Interdisciplinary Telecom Program</a> at the University of Colorado Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
-								br
-								br
-								| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
+					div.bio-container
+						div.inline
+							div.inline.col-sm-4.col-md-2
+								img.profile-pic(src="http://www.colorado.edu/itp/sites/default/files/styles/small/public/people/levi_perigo_pc0005.jpg?itok=fvLcBKiQ")
+							div.inline.col-sm-8.col-md-10
+								div
+								p#bio.white-text
+									| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the <a href="http://www.colorado.edu/itp/">Interdisciplinary Telecom Program</a> at the University of Colorado Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
+									br
+									br
+									| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
 		footer.footer.container-fluid
 			nav.navbar-default
-						.container-fluid.foot
-							ul.nav.navbar-nav.center.foot-nav-list
+						.container-fluid.foot.center
+							ul.nav.foot-nav-list
 								li.foot-link
 									a.white-text(href='/') Home
 								li.foot-link
 									a.white-text(href='services', role='button')
 										| Services
-									ul.list-group
-										li.foot-service
-											a(href='services#network-design') Network Design
-										li.foot-service
-											a(href='services#network-security') Network Security
-										li.foot-service
-											a(href='services#research') Research
-										li.foot-service
-											a(href='services#route-switch') Routing and Switching
-										li.foot-service
-											a(href='services#training') Training
-										li.foot-service
-											a(href='services#voip') Voice over IP (VoIP)
-										li.foot-service
-											a(href='services#wireless') Wireless
+									//- ul.list-group
+									//- 	li.foot-service
+									//- 		a(href='services#network-design') Network Design
+									//- 	li.foot-service
+									//- 		a(href='services#network-security') Network Security
+									//- 	li.foot-service
+									//- 		a(href='services#research') Research
+									//- 	li.foot-service
+									//- 		a(href='services#route-switch') Routing and Switching
+									//- 	li.foot-service
+									//- 		a(href='services#training') Training
+									//- 	li.foot-service
+									//- 		a(href='services#voip') Voice over IP (VoIP)
+									//- 	li.foot-service
+									//- 		a(href='services#wireless') Wireless
 								//- li.foot-link
 								//- 	a.white-text(href='about')
 								//- 		| About 
 								//- 		span.sr-only (current)
 								li.foot-link
 									a.white-text(href='contact') Contact
-			div.copywrite.white-text.center.foot-service
-				p
-					| Copyright © Raven Innovation
+						.foot
+							div.copywrite.white-text.center.foot-service.foot-list-nav
+								p
+									| Copyright © Raven Innovation
 
 
 
