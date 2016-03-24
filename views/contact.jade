@@ -16,13 +16,13 @@ block content
 			//- 	.alert.alert-danger.hidden
 			//- 		span.glyphicon.glyphicon-alert
 			//- 		strong  Error! Please check the inputs. (If form error!)
-			form(role='form', action='http://formmail.dreamhost.com/cgi-bin/formmail.cgi', method='POST')
+			form(role='form', action='https://formspree.io/levi@raveninnovation.com', method='POST')
 				.col-lg-3
 				.col-lg-6
 					.form-group
 						label.white-text(for='InputName') Your Name
 						.input-group
-							input#inputName.form-control(type='text', name='realname', placeholder='Enter Name', required='')
+							input#inputName.form-control(type='text', name='RealName', placeholder='Enter Name', required='')
 							span.input-group-addon
 								i.glyphicon.glyphicon-ok.form-control-feedback
 					.form-group
@@ -39,9 +39,11 @@ block content
 								i.glyphicon.glyphicon-ok.form-control-feedback
 					.form-group
 						.input-group
-							input#inputRecipient.form-control(type='hidden' name="recipient" value="andrew#raveninnovation.com, levi#raveninnovation.com")
+							input#inputRecipient.form-control(type='hidden' name="_cc" value='andrew@raveninnovation.com')
 						.input-group
-							input#inputRedirect.form-control(type='hidden' name='redirect', value='http://localhost:3000/contact')
+							input#inputRedirect.form-control(type='hidden' name='_next', value='http://www.raveninnovation.com')
+						.input-group
+							input#gotcha.form-control(type='text' name='_gotcha' style='display:none')
 					input#submit.btn.btn-info.pull-right(type='submit')
 			if(typeof msg !== 'undefined')
 				if(!!err)

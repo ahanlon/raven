@@ -8,7 +8,7 @@ var mailController = require('./controllers/mail.js');
 
 // configure express
 var app = express();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 21);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.favicon());
@@ -32,6 +32,6 @@ app.post('/mail', mailController.mail);
 
 
 // start server
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(3000, function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
