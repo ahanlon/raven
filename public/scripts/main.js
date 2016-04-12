@@ -12,6 +12,11 @@ var vHeight = $(window).height(),
 contact.css({"height":vHeight});
 about.css({"height":vHeight});
 
+
+// $('#services-btn').on('click', function(e) {
+	
+// })
+
 // ---------------- change background image on page load ------------------
 // $(window).on('load', function() {
 // 	$('body').css('background', 'none');

@@ -22,7 +22,7 @@ html.min-height
 						#bs-example-navbar-collapse-2.collapse.navbar-collapse.float-right
 							ul.nav.navbar-nav
 								li.dropdown
-									a#service-btn.dropdown-toggle.white-text(href='services', data-hover='dropdown', role='button', aria-expanded='false')
+									a#service-btn.dropdown-toggle.white-text( data-toggle='dropdown', role='button', aria-expanded='false')
 										| Services
 										span.caret
 									ul.dropdown-menu(role='menu')
@@ -62,11 +62,15 @@ html.min-height
 					div.bio-container
 						div.inline
 							div.inline.col-sm-4.col-md-2
-								img.profile-pic(src="http://www.colorado.edu/itp/sites/default/files/styles/small/public/people/levi_perigo_pc0005.jpg?itok=fvLcBKiQ")
+								a(href="https://www.linkedin.com/in/ldperigo", target="_blank")
+									img.profile-pic(src="http://www.colorado.edu/itp/sites/default/files/styles/small/public/people/levi_perigo_pc0005.jpg?itok=fvLcBKiQ")
 							div.inline.col-sm-8.col-md-10
 								div
 								p#bio.white-text
-									| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the <a href="http://www.colorado.edu/itp/">Interdisciplinary Telecom Program</a> at the University of Colorado Boulder.  Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc.  In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts.  He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Voice over IP (VoIP), and Internet of Things (IoT) home integration.  Dr. Perigo's research interests are in a variety of internetworking technologies like VoIP, Software Defined Networking (SDN), Network Functions Virtualization (NFV), and Internet of Things (IoT).  Specifically, he has studied Internet Protocol version 6 (IPv6). 
+									| Dr. Levi Perigo is an independent consultant and Scholar in Residence in the Interdisciplinary Telecom Program at the University of Colorado Boulder. Prior to joining the University of Colorado full-time, Dr. Perigo was a Senior Network Engineer at ADTRAN Inc. In this role, he served as an escalation point for isolation and resolution of heterogeneous internetworking problems for major accounts. He holds vendor certifications in telecommunications technologies in areas such as IP routing, switching, network design, wireless technologies, Software Defined Networking (SDN), Network Functions Virtualization (NFV), Voice over IP (VoIP), and Internet of Things (IoT) home integration. 
+									br
+									br
+									|  Dr. Perigo's research and training interests are in a variety of internetworking technologies such as VoIP, IPv6, SDN/NFV, and next generation protocols. Currently, as a <a href="https://www.opennetworking.org/technical-communities/groups/research-associates" target="_blank">Research Associate</a> for the Open Networking Foundation (ONF), his research focuses on implementation and best practices for IPv6 VoIP SDN. 
 									br
 									br
 									| Dr. Perigo holds an MS in Information and Communication Sciences from Ball State University and a PhD in Information Systems from Nova Southeastern University.
@@ -108,6 +112,7 @@ html.min-height
 
 
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.js")
 		script(src='scripts/main.js')
